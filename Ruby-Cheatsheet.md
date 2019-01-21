@@ -1,4 +1,4 @@
-[back to overwiev](/../..)  
+[back to overview](/../..)  
 Looking for [Rails](../Ruby-on-Rails-Cheatsheet.md)?
 
 # Ruby Cheatsheet
@@ -16,10 +16,10 @@ Looking for [Rails](../Ruby-on-Rails-Cheatsheet.md)?
 [Comment](#comment)  
 [Conditions](#conditions)  
 [Printing & Putting](#printing--putting)  
-[User Imput](#user-imput)  
+[User Input](#user-input)  
 [Loops](#loops)
 [Sorting & Comparing](#sorting--comparing)  
-[Usefull Methods](#usefull-methods)
+[Useful Methods](#useful-methods)
 
 ## Basics
 
@@ -37,7 +37,7 @@ Looking for [Rails](../Ruby-on-Rails-Cheatsheet.md)?
 - - `@@`: class variable
 - `1_000_000`: 1000000 –– just easier to read\*
 
-## Vars, Contants, Arrays, Hashes & Symbols
+## Vars, Constants, Arrays, Hashes & Symbols
 
 ```Ruby
 my_variable = “Hello”
@@ -229,7 +229,7 @@ multiply = lambda { |x| x * 3 }
 y = [1, 2].collect(&multiply) # 3 , 6
 ```
 
-Diff between blocs and lambdas:
+Diff between blocks and lambdas:
 
 - a lambda checks the number of arguments passed to it, while a proc does not (This means that a lambda will throw an error if you pass it the wrong number of arguments, whereas a proc will ignore unexpected arguments and assign nil to any that are missing.)
 - when a lambda returns, it passes control back to the calling method; when a proc returns, it does so immediately, without going back to the calling method.
@@ -253,7 +253,7 @@ Diff between blocs and lambdas:
 ```Ruby
 =begin
 Bla
-Multyline comment
+Multiline comment
 =end
 ```
 
@@ -312,7 +312,7 @@ end
 - `&&`: and
 - `||`: or
 - `!`: not
-- `(x && (y || w)) && z`: use parenthesis to combine arguments
+- `(x && (y || w)) && z`: use parentheses to combine arguments
 - problem = false
 - print "Good to go!" unless problem –– prints out because problem != true
 
@@ -339,7 +339,7 @@ puts "test" # puts the text in a separate line
 :test.to_s # converts to "test"
 ```
 
-## User Imput
+## User Input
 
 ```Ruby
 gets # is the Ruby equivalent to prompt in javascript (method that gets input from the user)
@@ -436,7 +436,7 @@ array.sort! # = [1,2,3,4,5] – works with text and other as well.
 array.sort! { |a, b| b <=> a } # to sort from Z to A instead of A to Z
 ```
 
-## Usefull Methods
+## Useful Methods
 
 ```Ruby
 1.is_a? Integer # returns true
@@ -448,3 +448,5 @@ array.sort! { |a, b| b <=> a } # to sort from Z to A instead of A to Z
 cube.call # implying that cube is a proc, call calls procs directly
 Time.now # displays the actual time
 ```
+
+
